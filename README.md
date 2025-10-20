@@ -6,6 +6,7 @@ Este proyecto proporciona un entorno reproducible para analizar un conjunto de d
 
 - Docker 20.10+ y Docker Compose Plugin 2.0+
 - (Opcional) `make` para utilizar las tareas predefinidas
+- (Opcional) Ejecución local sin Docker: Python 3.11 y las dependencias listadas en `requirements.txt`
 
 ## Imagen Docker
 
@@ -77,6 +78,7 @@ Todos los comandos montan el proyecto en `/workspace` dentro del contenedor, por
 ## Mantenimiento
 
 - Si agregas nuevas dependencias Python, modifícalas en el `Dockerfile` y reconstruye la imagen.
+- Para ejecutar localmente, crea un entorno virtual e instala con `pip install -r requirements.txt`.
 - Para reiniciar el entorno desde cero, usa `docker compose down --volumes` y vuelve a levantar el servicio.
 
 ## Licencia
